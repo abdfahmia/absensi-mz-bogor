@@ -22,10 +22,10 @@ class KehadiranController extends Controller
         // $jamaahCounts = [];
 
         // Loop through activities and calculate the Jamaah count for each one
-        foreach ($activities as $activity) {
-            $jamaahCount = $activity->jamaahs->count();
-            $jamaahCounts[$activity->id] = $jamaahCount;
-        }
+        // foreach ($activities as $activity) {
+        //     $jamaahCount = $activity->jamaahs->count();
+        //     $jamaahCounts[$activity->id] = $jamaahCount;
+        // }
 
         return view('kehadiran.index', compact('kehadiran', 'activities'));
     }
